@@ -15,18 +15,11 @@ class Home extends StatelessWidget {
         title: const Text('My First App'),
         centerTitle: true,
       ),
-      body: Center(
-        child: IconButton(
-          onPressed: () {
-            print('you clicked me');
-          },
-          icon: const Icon(
-            Icons.alternate_email
-          ),
-          style: ElevatedButton.styleFrom(
-            backgroundColor: Colors.amber,
-          ),
-        ),
+      body: Container(
+        padding: EdgeInsets.fromLTRB(10.0, 20.0, 30.0, 40.0),
+        margin: EdgeInsets.all(30.0),
+        color: Colors.grey[400],
+        child: Text('Hello'),
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: () {},
