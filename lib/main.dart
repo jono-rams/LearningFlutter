@@ -16,12 +16,23 @@ class Home extends StatelessWidget {
         centerTitle: true,
       ),
       body: Center(
-          child: Image.asset('assets/space-1.jpg'),
+        child: ElevatedButton.icon(
+          onPressed: () {
+            print('you clicked me');
+          },
+          icon: const Icon(
+            Icons.mail
+          ),
+          style: ElevatedButton.styleFrom(
+            backgroundColor: Colors.amber,
+          ),
+          label: const Text('Mail me'),
+        ),
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: () {},
         backgroundColor: Colors.purple[300],
-        child: const Text('Click'),
+        child: Text('Press'),
       ),
     );
   }
