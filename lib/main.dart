@@ -16,17 +16,16 @@ class Home extends StatelessWidget {
         centerTitle: true,
       ),
       body: Center(
-        child: ElevatedButton.icon(
+        child: IconButton(
           onPressed: () {
             print('you clicked me');
           },
           icon: const Icon(
-            Icons.mail
+            Icons.alternate_email
           ),
           style: ElevatedButton.styleFrom(
             backgroundColor: Colors.amber,
           ),
-          label: const Text('Mail me'),
         ),
       ),
       floatingActionButton: FloatingActionButton(
